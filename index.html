@@ -7,21 +7,35 @@
     <title>StayCool</title>
     <link rel="stylesheet" href="styles.css" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav class="topheader">
+    <nav class="top-header" id="Menu-principal">
       <div class="logo">
-        <img src="Logo.png" alt="" />
+        <img height="80" width=80" src="Imagenes/Logo.png" alt="" />
         <h1 class="logo-titulo" ;>Staycool</h1>
+        <div class="Botones-Menu">
+          <img src="Imagenes/imagen_llamada.png" alt="" />
+          <img src="Imagenes/imagen_notificaciones.png" alt="" />
+          <a href="" class="btn"><strong>INGRESAR</strong></a>
+          <button class="Menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        </div>
       </div>
       <ul class="Menu-horizontal">
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Quienes Somos</a></li>
         <li>
-          <a href="">Servicios</a>
+          <a href=""><strong>INICIO</strong></a>
+        </li>
+        <li>
+          <a href="#Descripción"><strong>QUIÉNES SOMOS</strong></a>
+        </li>
+        <li>
+          <a href=""><strong>SERVICIOS</strong></a>
           <ul class="Menu-vertical">
             <li><a href="">Desayunos</a></li>
             <li><a href="">Almuerzos</a></li>
@@ -30,17 +44,21 @@
             <li><a href="">Jugos</a></li>
           </ul>
         </li>
-        <li><a href="">Testimonios</a></li>
-        <li><a href="">Consultas</a></li>
+        <li>
+          <a href=""><strong>TESTIMONIOS</strong></a>
+        </li>
+        <li>
+          <a href="Consultas.html"><strong>CONSULTAS</strong></a>
+        </li>
       </ul>
     </nav>
-    <section class="Inicio">
+    <section class="Inicio" id="Inicio">
       <div class="Inicio-contenido">
         <div class="Inicio-imagen">
           <img
             height="250"
             width="400"
-            src="psicologa-inicio.png"
+            src="Imagenes/psicologa-inicio.png"
             alt=""
           />
         </div>
@@ -55,7 +73,7 @@
         </div>
       </div>
     </section>
-    <section class="Descripción">
+    <section class="Descripción" id="Descripción">
       <div class="Descripción-contenido">
         <h1>¿Quiénes somos?</h1>
         <p>
@@ -67,7 +85,7 @@
         </p>
       </div>
     </section>
-    <section class="Motivo">
+    <section class="Motivo" id="Objetivos">
       <div class="Motivo-descripcion">
         <div class="columna">
           <h1>Misión</h1>
@@ -101,5 +119,6 @@
         </div>
       </div>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>
