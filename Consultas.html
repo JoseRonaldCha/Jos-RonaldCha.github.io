@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>StayCool</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="topheader" id="Menu-principal">
+      <div class="logo">
+        <img src="Imagenes/Logo.png" alt="" />
+        <h1 class="logo-titulo" ;>Staycool</h1>
+      </div>
+      <ul class="Menu-horizontal">
+        <li>
+          <a href="index.html"><strong>INICIO</strong></a>
+        </li>
+        <li>
+          <a href="index.html#Descripción"><strong>QUIÉNES SOMOS</strong></a>
+        </li>
+        <li>
+          <a href=""><strong>SERVICIOS</strong></a>
+          <ul class="Menu-vertical">
+            <li><a href="">Desayunos</a></li>
+            <li><a href="">Almuerzos</a></li>
+            <li><a href="">Cenas</a></li>
+            <li><a href="">Postres</a></li>
+            <li><a href="">Jugos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href=""><strong>TESTIMONIOS</strong></a>
+        </li>
+        <li>
+          <a href="Consultas.html"><strong>CONSULTAS</strong></a>
+        </li>
+      </ul>
+    </nav>
+    <!--Registro de Consulta-->
+    <section class="Consultas" id="Consulta">
+      <img  height="500" width="700" src="Imagenes/imagen-contactanos.png" alt="" />
+      <h2>Para más informacion, escríbenos</h2>
+      <div class="contenido-registro">
+        <form class="formulario-registro" id="formulario-registro" name="frm">
+          <div class="form-grupo">
+            <label for="nombres">Nombres: </label>
+            <input type="text" name="nombres" id="nombres" />
+            <!--required-->
+          </div>
+          <div class="form-grupo">
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" name="apellidos" id="apellidos" />
+            <!--required-->
+          </div>
+          <div class="form-grupo">
+            <label for="telefono">Telefono: </label>
+            <input type="tel" name="telefono" id="telefono" />
+            <!--required-->
+          </div>
+          <div class="form-grupo">
+            <label for="pais">País:</label>
+            <input type="text" name="pais" id="pais" />
+            </select>
+          </div>
+          <div class="form-grupo">
+            <label for="email">Correo electronico: </label>
+            <input type="text" name="email" id="email" />
+            <!--required-->
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="Mensaje-opcional">
+          <p>
+            Después de completar toda la información correspondientes, nos
+            contactaremos contigo en el más breve plazo.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
