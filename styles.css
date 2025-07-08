@@ -1,15 +1,20 @@
 .top-header {
-  flex-direction: column;
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
   background-color: #e3e3e3;
-
+  width: 100%;
+  z-index: 100;
+  height: 6.25rem;
+  justify-content: space-around;
+  border-block-end: 1.5rem solid #2b91b3;
+  font-size: 1.2rem;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  padding: 15px;
-  gap: 15px;
+  padding: 5px;
+  gap: 5px;
 }
 
 .logo img {
@@ -17,39 +22,32 @@
 }
 
 .logo-titulo {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #007377;
-  margin: 0;
   font-family: "Noto Sans", sans-serif;
-}
-
-.Botones-Menu {
-  display: flex;
-  align-items: flex-end;
-  gap: 20px;
-  margin-left: 55rem;
-}
-
-.Botones-Menu img {
-  width: 30px;
-  height: 30px;
 }
 
 .btn {
   background-color: #81a8bc;
+  display: block;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 0.5rem;
   text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
+  font-size: 15px;
+  height: 20px;
+  flex-wrap: wrap;
 }
 
 .Menu-horizontal {
+  z-index: 100;
   list-style: none;
   display: flex;
   justify-content: space-around;
-  background-color: #b1d9ed;
-  margin-top: 0;
+  width: 60%;
+  max-width: 75rem;
 }
 
 .Menu-horizontal li a {
@@ -57,19 +55,21 @@
   padding: 15px 20px;
   color: black;
   text-decoration: none;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .Menu-horizontal li a:hover {
-  color: darkred;
+  color: #50c1e9;
 }
 
 .Menu-vertical {
   padding: 0;
   position: absolute;
   display: none;
-  width: 200px;
-  background-color: bisque;
+  width: 12.5rem;
+  background-color: #e1f5fe;
 }
 
 .Menu-horizontal li:hover .Menu-vertical {
@@ -83,58 +83,66 @@
   padding: 15px 15px 15px 15px;
 }
 
-/* SECCIÓN HISTORIA */
+/*PANTALLA PRINCIPAL*/
+.Pantalla-principal {
+  height: auto;
+  background-image: url(/Fondo-Pantalla.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*SECCIÓN INICIO*/
 .Inicio {
   width: 100%;
-  padding-top: 2.5rem; /* Espacio superior para evitar que el menú tape el contenido */
-  padding-bottom: 3rem; /* Espaciado inferior */
-  color: #333; /* Texto gris oscuro legible */
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  color: #333;
   font-family: "Noto Sans", sans-serif;
   align-items: center;
 }
 
 .Inicio h2 {
-  font-size: 2.7rem; /* Tamaño de título */
+  font-size: 2.7rem;
   margin-bottom: 2rem;
   color: #222;
 }
 
-/* CONTENEDOR DE IMAGEN Y TEXTO */
 .Inicio-contenido {
-  display: flex; /* Flexbox para organizar en fila */
-  flex-direction: row; /* Elementos uno al lado del otro */
-  gap: 2rem; /* Espacio entre imagen y texto */
-  align-items: center; /* Alineación vertical centrada */
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
   width: 100%;
 }
 
-/* IMAGEN */
 .Inicio-imagen {
   display: flex;
   align-items: center;
   justify-content: end;
-  flex: 1; /* Toma la mitad del espacio */
+  flex: 1;
 }
 
 .Inicio-imagen img {
-  border-radius: 0.5rem; /* Bordes redondeados */
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 /* TEXTO */
 .Inicio-texto {
   padding: 1rem;
   gap: 2rem;
-  flex: 1.5; /* Ocupa la otra mitad del espacio */
-  font-size: 1rem; /* Tamaño base de texto */
-  line-height: 1.2; /* Altura de línea para mejor lectura */
+  flex: 1.5;
+  font-size: 1rem;
+  line-height: 1.2;
 }
 
 .Inicio-texto p + p {
   width: 80%;
-  margin-top: 0.5rem; /* Espacio entre párrafos */
+  margin-top: 0.5rem;
 }
 
+/*DESCRIPCIÓN*/
 .Descripción {
   display: flex;
   justify-content: center;
@@ -147,59 +155,214 @@
 .Descripción-contenido {
   display: block;
   width: 80%;
-  background-color: white;
   padding: 2rem;
   gap: 2rem;
   font-size: 1.5rem;
 }
 
-/* CONTENEDOR PRINCIPAL PARA LAS COLUMNAS */
+/*CUADROS - MOTIVO */
 .Motivo {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-  padding: 2rem;
-  background-color: white;
+  padding: 40px 45px;
 }
 
 /* CONTENEDOR DE LAS TRES COLUMNAS */
 .Motivo-descripcion {
   display: flex;
-  justify-content: center;
-  width: 80%;
-  gap: 1rem;
-  padding: 1rem;
-  font-size: 1rem;
+  gap: 15px;
+  padding: 0 15px;
 }
 
 /* ESTILO PARA CADA COLUMNA */
 .columna {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 1.5rem;
-  background-color: #d0d0d0;
-  border-radius: 1rem;
-  border: 2px solid #999;
+  padding: 1rem;
+  background-color: #77b9cf;
+  border-radius: 8px;
+  border: 1px solid #999;
   text-align: center;
 }
 
-.Consultas{
+.columna h1 {
   display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
-.Consultas img{
-  flex: 1;
-  display:flex;
-  border-radius: 1rem;
-  
+.columna p {
+  display: flex;
+  margin: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/*INICIO SESION*/
+.Iniciar-sesion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  background-image: url(/Fondo-Pantalla.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Logo-inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+.Logo-inicial img {
+  width: 100px;
+  height: auto;
+  margin: 1rem;
+}
+
+.logo-titulo {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2.5rem;
+  color: #2b91b3;
+}
+
+.inicio-sesion h2 {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio-sesion {
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid black;
+  text-align: left;
+  background-color: white;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.inicio-sesion input,
+.inicio-sesion button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.inicio-sesion button {
+  background-color: #2b91b3;
+  color: white;
+}
+
+.inicio-sesion button:hover {
+  background-color: #007377;
+}
+
+/*SECCION Servicios*/
+.Servicio {
+  height: auto;
+  background-image: url(/Fondo-Pantalla.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Columna-servicio {
+  display: flex;
+  gap: 15px;
+  padding: 0 15px;
+}
+
+.Servicio h2 {
+  display: flex;
+  margin-top: 0;
+  padding-top: 1.3rem;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.Servicio p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.columna h3 {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.btn-columna {
+  display: flex;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.columna-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+.solicitud-servicio {
+  text-align: center;
+  padding: 29px 20px;
+  height: auto;
+  background-image: url(/Fondo-Pantalla.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn-servicio {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin: 1rem;
+  font-size: 1.1em;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.vacio {
+  text-align: center;
+  padding: 1.6rem;
+  height: auto;
+  background-image: url(/Fondo-Pantalla.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .Menu-toggle {
-  display: none; /* Mostrar botón hamburguesa en móviles */
+  display: none;
 }
 
 /* RESPONSIVE DESIGN */
@@ -207,64 +370,37 @@
   .Menu-toggle {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 22px;
+    justify-content: center;
+    width: 50px;
+    height: 42px;
     border: none;
     cursor: pointer;
-  }
-  
-  .Botones-Menu {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-left: 1rem;
+    align-self: center;
     margin-right: 1rem;
-  }
-
-  .Botones-Menu img {
-    width: 25px;
-    height: 25px;
-  }
-
-  .btn {
-    padding: 6px 12px;
-    font-size: 0.9rem;
   }
 
   .Menu-horizontal {
     display: none;
     flex-direction: column;
-    align-items: center;
+    width: 30%;
     background-color: #b1d9ed;
-  }
-
-  .Menu-horizontal li {
-    width: 100%;
-    text-align: center;
+    position: absolute;
+    margin-left: 5rem;
+    top: 5rem;
+    left: 0;
+    flex-wrap: wrap;
   }
 
   .Menu-horizontal.active {
-    display: flex; 
+    display: flex;
+  }
+
+  .Menu-horizontal li {
+    border-bottom: 1px solid black;
   }
 
   .Menu-vertical {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    background-color: white;
-  }
-
-  .Menu-horizontal li:hover .Menu-vertical {
-    display: fixed;
-    list-style: none;
-  }
-
-  .Menu-vertical li a {
-    display: block;
-    color: black;
-    padding: 15px 15px 15px 15px;
+    background-color: #e1f5fe;
   }
 
   .Inicio-contenido {
@@ -280,6 +416,7 @@
 
   .Inicio-texto {
     padding: 0.5rem;
+    text-align: center;
   }
 
   .Inicio-texto p + p {
@@ -289,21 +426,329 @@
     padding: 0.5rem;
   }
 
-  .Motivo-descripción {
+  .Motivo-descripcion {
     flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-    padding: 0.5rem;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .Columna-servicio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
   }
 
   .columna {
-    min-width: auto;
-    max-width: 100%;
+    background-color: #77b9cf;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .columna-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .Consultas {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .Consultas img {
     width: 100%;
+    max-width: 350px;
+  }
+
+  .contenido-registro {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     margin: 0;
+    padding: 0;
+  }
+
+  .formulario-registro {
+    width: 90%;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .formulario-registro h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-grupo input {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .Mensaje-opcional {
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
   }
 }
- /*
-* {
-  outline: 1px solid red;
+.notificaciones-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f3faff;
+  border-radius: 10px;
+  margin-top: 2rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.notificaciones-section h2 {
+  font-size: 2.2rem;
+  color: #2b91b3;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.formulario-notificaciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.formulario-notificaciones label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.formulario-notificaciones select,
+.formulario-notificaciones button {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.formulario-notificaciones button {
+  background-color: #2b91b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formulario-notificaciones button:hover {
+  background-color: #007377;
+}
+
+.mensaje-descanso {
+  margin-top: 2rem;
+  background-color: #e1f5fe;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: #007377;
+}
+
+.frases-motivadoras {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px dashed #77b9cf;
+  border-radius: 10px;
+}
+
+.frases-motivadoras h3 {
+  color: #2b91b3;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.frases-motivadoras ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.frases-motivadoras li {
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.estadisticas {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f3faff;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.estadisticas h2 {
+  font-size: 2.2rem;
+  color: #2b91b3;
+  margin-bottom: 1rem;
+}
+
+.estadisticas p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+:root {
+  --color-pantalla: #2b91b3;
+  --color-descanso: #5cb85c;
+}
+
+.estadisticas {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f0f9fc;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.estadisticas h2 {
+  font-size: 2.2rem;
+  color: #2b91b3;
+  margin-bottom: 0.5rem;
+}
+
+.estadisticas p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.grafico-contenedor {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.leyenda {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.leyenda p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.color-pantalla,
+.color-descanso {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.color-pantalla {
+  background-color: var(--color-pantalla);
+}
+
+.color-descanso {
+  background-color: var(--color-descanso);
+}
+
+.grafico-contenedor {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+}
+
+.leyenda {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 1.5rem;
+}
+
+.leyenda p {
+  margin: 0.2rem 0;
+}
+.calendario {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f0f9fc;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.calendario h2 {
+  font-size: 2.2rem;
+  color: #2b91b3;
+  margin-bottom: 0.5rem;
+}
+
+.calendario p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.calendario-grid {
+  display: grid;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.calendario-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.calendario-header span {
+  text-align: center;
+  color: #007377;
+}
+
+.calendario-cuerpo {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  min-height: 100px;
+  gap: 15px;
+}
+
+.calendario-cuerpo div {
+  background-color: #d6edf7;
+  padding: 1rem;
+  border-radius: 6px;
+  min-height: 80px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
