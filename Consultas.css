@@ -1,0 +1,87 @@
+.Consultas {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  text-align: center;
+  height: auto;
+  background-image: url(/Fondo-Pantalla.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Consultas img {
+  flex: 1;
+  display: flex;
+  border-radius: 1rem;
+}
+
+.contenido-registro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 15px;
+}
+
+.contenido-registro img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.formulario-registro {
+  background-color: white;
+  padding: 30px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid black;
+}
+
+.formulario-registro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: black;
+}
+
+.form-grupo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-grupo input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4da6ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #1a8cff;
+}
+
+.Mensaje-opcional {
+  max-width: 600px;
+  color: black;
+  font-style: italic;
+  font-size: 0.95rem;
+}

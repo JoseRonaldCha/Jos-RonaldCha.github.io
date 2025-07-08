@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estadísticas de Uso</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="estadisticas.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav class="top-header" id="Menu-principal">
+      <button class="Menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <div class="logo">
+        <img height="80" width="80" src="Imagenes/Logo.png" alt="" />
+        <h1 class="logo-titulo">Staycool</h1>
+      </div>
+      <ul class="Menu-horizontal">
+        <li><a href="notificaciones.html">NOTIFICACIONES</a></li>
+        <li><a href="estadistica.html">ESTADÍSTICAS</a></li>
+        <li><a href="calendario.html">CALENDARIO</a></li>
+        <a class="btn" href="index.html">SALIR</a>
+      </ul>
+    </nav>
+
+    <section class="estadisticas">
+      <h2>Estadísticas de Uso y Descanso</h2>
+      <p>
+        Visualiza cuánto tiempo pasas frente a la pantalla y cuánto dedicas al
+        descanso. Esta información te ayudará a mejorar tu equilibrio digital.
+      </p>
+
+      <div class="grafico-contenedor">
+        <canvas id="graficoTiempo"></canvas>
+      </div>
+
+      <div class="leyenda">
+        <p><span class="color-pantalla"></span> Tiempo frente a pantalla</p>
+        <p><span class="color-descanso"></span> Tiempo de descanso</p>
+      </div>
+    </section>
+    <script src="Estadistica.js"></script>
+  </body>
+</html>

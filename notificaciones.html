@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notificaciones de Pausa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="notificaciones.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="top-header" id="Menu-principal">
+      <button class="Menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <div class="logo">
+        <img height="80" width="80" src="Imagenes/Logo.png" alt="" />
+        <h1 class="logo-titulo">Staycool</h1>
+      </div>
+      <ul class="Menu-horizontal">
+        <li><a href="notificaciones.html">NOTIFICACIONES</a></li>
+        <li><a href="estadistica.html">ESTADÍSTICAS</a></li>
+        <li><a href="calendario.html">CALENDARIO</a></li>
+        <a class="btn" href="index.html">SALIR</a>
+      </ul>
+    </nav>
+
+    <section class="notificaciones-section">
+      <h2>Gestión de Notificaciones de Pausa Digital</h2>
+      <p class="intro-text">
+        Configure sus preferencias para recibir alertas que le ayuden a mantener
+        un uso equilibrado de su dispositivo.
+      </p>
+
+      <form id="formNotificaciones" class="formulario-notificaciones">
+        <label for="estado">¿Desea recibir notificaciones de descanso?</label>
+        <select id="estado" name="estado">
+          <option value="si">Sí, activar</option>
+          <option value="no">No, desactivar</option>
+        </select>
+        <button type="submit">Guardar Preferencias</button>
+      </form>
+
+      <div class="mensaje-descanso" id="mensajeDescanso" style="display: none">
+        <p>
+          Ha excedido el tiempo de uso recomendado. Se sugiere realizar una
+          pausa breve antes de continuar.
+        </p>
+      </div>
+
+      <div class="frases-motivadoras">
+        <h3>Frases para acompañar sus descansos</h3>
+        <ul>
+          <li>“Descansar no es rendirse, es prepararse mejor.”</li>
+          <li>“Una pausa a tiempo mejora la productividad.”</li>
+          <li>“La concentración también necesita descanso.”</li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="notificaciones.js"></script>
+  </body>
+</html>

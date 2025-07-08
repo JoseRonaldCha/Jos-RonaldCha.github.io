@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendario de Actividades</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="calendario.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="top-header" id="Menu-principal">
+      <button class="Menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <div class="logo">
+        <img height="80" width="80" src="Imagenes/Logo.png" alt="" />
+        <h1 class="logo-titulo">Staycool</h1>
+      </div>
+      <ul class="Menu-horizontal">
+        <li><a href="notificaciones.html">NOTIFICACIONES</a></li>
+        <li><a href="estadistica.html">ESTADÍSTICAS</a></li>
+        <li><a href="calendario.html">CALENDARIO</a></li>
+        <a class="btn" href="index.html">SALIR</a>
+      </ul>
+    </nav>
+
+    <section class="calendario">
+      <h2>Mi Calendario</h2>
+      <p>
+        Consulta tus citas y actividades programadas de forma clara y
+        organizada.
+      </p>
+
+      <div class="calendario-grid">
+        <div class="calendario-header">
+          <span>Lunes</span>
+          <span>Martes</span>
+          <span>Miércoles</span>
+          <span>Jueves</span>
+          <span>Viernes</span>
+          <span>Sábado</span>
+          <span>Domingo</span>
+        </div>
+        <div class="calendario-cuerpo">
+          <div><strong>3PM</strong><br />Psicólogo</div>
+          <div></div>
+          <div><strong>10AM</strong><br />Charla motivacional</div>
+          <div></div>
+          <div><strong>6PM</strong><br />Descanso guiado</div>
+          <div></div>
+          <div><strong>4PM</strong><br />Estudio personal</div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
