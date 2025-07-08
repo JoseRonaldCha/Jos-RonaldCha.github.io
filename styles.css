@@ -86,7 +86,7 @@
 /*PANTALLA PRINCIPAL*/
 .Pantalla-principal {
   height: auto;
-  background-image: url(/Fondo-Pantalla.png);
+  background-image: url('Fondo-Pantalla.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -211,7 +211,7 @@
   align-items: center;
   flex-direction: column;
   height: auto;
-  background-image: url(/Fondo-Pantalla.png);
+  background-image: url('Fondo-Pantalla.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -278,7 +278,7 @@
 /*SECCION Servicios*/
 .Servicio {
   height: auto;
-  background-image: url(/Fondo-Pantalla.png);
+  background-image: url('Fondo-Pantalla.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -333,7 +333,7 @@
   text-align: center;
   padding: 29px 20px;
   height: auto;
-  background-image: url(/Fondo-Pantalla.png);
+  background-image: url('Fondo-Pantalla.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -355,7 +355,7 @@
   text-align: center;
   padding: 1.6rem;
   height: auto;
-  background-image: url(/Fondo-Pantalla.png);
+  background-image: url('Fondo-Pantalla.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
