@@ -86,7 +86,7 @@
 /*PANTALLA PRINCIPAL*/
 .Pantalla-principal {
   height: auto;
-  background-image: url('Fondo-Pantalla.png');
+  background-image: url("Fondo-Pantalla.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
