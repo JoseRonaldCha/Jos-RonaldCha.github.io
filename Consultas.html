@@ -6,48 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>StayCool</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Consultas.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav class="topheader" id="Menu-principal">
+    <nav class="top-header" id="Menu-principal">
+      <button class="Menu-toggle" aria-label="Abrir menú">&#9776;</button>
       <div class="logo">
-        <img src="Logo.png" alt="" />
-        <h1 class="logo-titulo" ;>Staycool</h1>
+        <img height="80" width="80" src="Imagenes/Logo.png" alt="" />
+        <h1 class="logo-titulo">Staycool</h1>
       </div>
       <ul class="Menu-horizontal">
+        <li><a href="index.html">INICIO</a></li>
         <li>
-          <a href="index.html"><strong>INICIO</strong></a>
-        </li>
-        <li>
-          <a href="index.html#Descripción"><strong>QUIÉNES SOMOS</strong></a>
-        </li>
-        <li>
-          <a href=""><strong>SERVICIOS</strong></a>
+          <a href="">SERVICIOS</a>
           <ul class="Menu-vertical">
-            <li><a href="">Desayunos</a></li>
-            <li><a href="">Almuerzos</a></li>
-            <li><a href="">Cenas</a></li>
-            <li><a href="">Postres</a></li>
-            <li><a href="">Jugos</a></li>
+            <li><a href="Servicio_Evaluación.html">Evaluación Psicológica</a></li>
+            <li><a href="Servicio_Educacion.html">Educación y Prevención</a></li>
+            <li><a href="Servicio_Atencion.html">Atención y Orientación</a></li>
+            <li><a href="Servicio_Charlas.html">Charlas</a></li>
           </ul>
         </li>
-        <li>
-          <a href=""><strong>TESTIMONIOS</strong></a>
-        </li>
-        <li>
-          <a href="Consultas.html"><strong>CONSULTAS</strong></a>
-        </li>
-      </ul>
+        <li><a href="Testimonios.html">TESTIMONIOS</a></li>
+        <li><a href="Consultas.html">CONSULTAS</a></li>
+        <a class="btn" href="Ingresar.html">INGRESAR</a>
     </nav>
     <!--Registro de Consulta-->
     <section class="Consultas" id="Consulta">
-      <img  height="500" width="700" src="imagen-contactanos.png" alt="" />
-      <h2>Para más informacion, escríbenos</h2>
+      <img src="Imagenes/imagen-contactanos.png" alt="" />
       <div class="contenido-registro">
         <form class="formulario-registro" id="formulario-registro" name="frm">
+          <h2>Para más informacion, escríbenos</h2>
           <div class="form-grupo">
             <label for="nombres">Nombres: </label>
             <input type="text" name="nombres" id="nombres" />
@@ -77,11 +69,12 @@
         </form>
         <div class="Mensaje-opcional">
           <p>
-            Después de completar toda la información correspondientes, nos
-            contactaremos contigo en el más breve plazo.
+            *Después de completar toda la información correspondientes, nos
+            contactaremos contigo en el más breve plazo.*
           </p>
         </div>
       </div>
     </section>
+    <script src="consultas.js"></script>
   </body>
 </html>
